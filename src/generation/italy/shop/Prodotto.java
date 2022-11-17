@@ -27,7 +27,7 @@ public class Prodotto{
 		return price;
 	}
 	
-	public float priceIva() {
+	public int priceIva() {
 		
 		return price + ((price * iva) / 100);
 	}
