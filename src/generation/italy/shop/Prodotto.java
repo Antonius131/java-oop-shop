@@ -24,9 +24,9 @@ public class Prodotto{
 		return price;
 	}
 	
-	public int priceIva() {
+	public float priceIva() {
 		
-		return price + (100 / iva);
+		return price + ((price * iva) / 100);
 	}
 	
 	@Override
@@ -38,6 +38,6 @@ public class Prodotto{
 				+ "\ncodice: " + code
 				+ "\ndescrizione: " + description
 				+ "\nprezzo: " + price + "€"
-				+ "\nprezzo + iva: " + priceIva();
+				+ "\nprezzo + iva: " + priceIva() + "€";
 	}
 }

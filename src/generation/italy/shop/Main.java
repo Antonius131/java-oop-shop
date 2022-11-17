@@ -8,6 +8,9 @@ public class Main {
 		System.out.println(product);
 		
 		Prodotto product2 = new Prodotto("Maglia", "Una bella maglia", 10);
-		System.out.println(product2);		
+		System.out.println(product2);
+		
+		Prodotto product3 = new Prodotto("Nike Air Max", "Guarda che scarpe!", 189);
+		System.out.println(product3);
 	}
 }
