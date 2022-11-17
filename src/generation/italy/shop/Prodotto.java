@@ -6,9 +6,9 @@ public class Prodotto{
 	
 	Random rnd = new Random();
 	
-	int code = rnd.nextInt(10000, 99999);
+	int code;
 	int price;
-	int iva = 20;
+	int iva;
 	String name;
 	String description;
 	
@@ -17,6 +17,9 @@ public class Prodotto{
 		this.name = name;
 		this.description = description;
 		this.price= price;
+		
+		code = rnd.nextInt(10000, 99999);
+		iva = 20;
 	}
 	
 	public int price(int price) {
